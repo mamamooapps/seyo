@@ -2,9 +2,22 @@ const kysButton = document.getElementById("kys-button");
 const wiContainer = document.getElementById("wheein-container");
 const seyoAudio = document.getElementById("seyo-audio");
 const kysImage = document.getElementById("kys-img");
+const muteToggleButton = document.getElementById("mute-toggle-button");
+const muteToggleImage = document.getElementById("mute-toggle-image");
 
 kysButton.addEventListener("click", () => {
   seyoAudio.play();
+});
+
+muteToggleButton.addEventListener("click", () => {
+  const mutedStatus = !!document.getElementById("seyo-audio").muted;
+  seyoAudio.muted = !mutedStatus;
+
+  if (mutedStatus) {
+    muteToggleImage.src = "./assets/speaker.png";
+  } else {
+    muteToggleImage.src = "./assets/mute.png";
+  }
 });
 
 seyoAudio.addEventListener("play", () => {

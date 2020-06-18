@@ -13,9 +13,14 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       <div id="seyo-page">
-        <audio src="./assets/seyo.mp3" id="seyo-audio"></audio>
+        <audio src="./assets/seyo.mp3" id="seyo-audio" muted="true"></audio>
+        <div id="mute-toggle-container">
+          <button id="mute-toggle-button">
+            <img id="mute-toggle-image" src="./assets/mute.png" />
+          </button>
+        </div>
         <div id="seyo-container">
-          <div id="kys-container">
+          <div id="kys-container" class="unselectable">
             <button
               id="kys-button"
               class="circle-button pulse-button unselectable"

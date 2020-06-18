@@ -75,6 +75,19 @@ button:active {
   justify-content: center;
 }
 
+#mute-toggle-container {
+  position: absolute;
+  right: 10%;
+}
+
+#mute-toggle-button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .circle-button {
   border-radius: 50%;
   padding: 0px;
