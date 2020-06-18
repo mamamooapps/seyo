@@ -59,7 +59,7 @@ button:active {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-apart;
 }
 
 #kys-container {
@@ -68,7 +68,7 @@ button:active {
 }
 
 #seyo-container {
-  min-height: 80vh;
+  min-height: 90vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,6 @@ button:active {
 .footer {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
 }
 
 .pulse-button {
@@ -144,10 +143,6 @@ button:active {
   #seyo-page {
     min-height: 90vh;
   }
-
-  /* .footer {
-    padding-bottom: 65px;
-  } */
 }
 
 @keyframes pulse {
