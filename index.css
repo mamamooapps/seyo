@@ -112,6 +112,10 @@ button:active {
 }
 
 @media only screen and (max-width: 600px) {
+  #seyo-page {
+    min-height: 80vh;
+  }
+
   .footer {
     padding-bottom: 65px;
   }
