@@ -120,6 +120,7 @@ button:active {
 .footer {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .pulse-button {
@@ -144,9 +145,9 @@ button:active {
     min-height: 90vh;
   }
 
-  .footer {
+  /* .footer {
     padding-bottom: 65px;
-  }
+  } */
 }
 
 @keyframes pulse {
